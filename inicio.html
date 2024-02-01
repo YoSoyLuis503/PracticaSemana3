@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="imagenes/el-salvador.png" type="image/x-icon">
+    <title>S3</title>
+</head>
+<body>
+    <center>
+    <!-- parte 1 -->
+
+    <h2>parte 1: Calculadora de Velocidad</h2>
+
+    <div class="gridV">
+    <label for="distancia">Distancia (km):</label>
+    <input type="number" id="distancia" placeholder="Ingrese la distancia">
+
+    <label for="tiempo">Tiempo (minutos):</label>
+    <input type="number" id="tiempo" placeholder="Ingrese el tiempo">
+
+    <button onclick="calcularVelocidad()">Calcular Velocidad</button>
+
+    <p id="resultado"></p>
+    </div>
+
+    <div></div>
+
+    <!-- parte 2 -->
+
+    <h2>parte 2: Clasificador de Triángulos</h2>
+
+    <div class="gridT">
+    
+    <label for="lado1">Lado 1:</label>
+    <input type="number" id="lado1" placeholder="Ingrese la medida del lado 1">
+
+    <label for="lado2">Lado 2:</label>
+    <input type="number" id="lado2" placeholder="Ingrese la medida del lado 2">
+
+    <label for="lado3">Lado 3:</label>
+    <input type="number" id="lado3" placeholder="Ingrese la medida del lado 3">
+
+    <button onclick="clasificarTriangulo()">Clasificar Triángulo</button>
+
+    <p id="resultadoTriangulo"></p>
+
+</div>
+
+
+    <!-- parte 3 -->
+
+    <h2>parte 3: Calculadora</h2>
+
+    <div class="cuerpo">
+
+        <label id="pantalla"></label>
+
+        <div class="numeros">
+            <button type="button" onclick="boton7()">7</button>
+            <button type="button" onclick="boton8()">8</button>
+            <button type="button" onclick="boton9()">9</button>
+            <button type="button" onclick="suma()">+</button>
+
+            <button type="button" onclick="boton4()">4</button>
+
+            <button type="button" onclick="boton5()">5</button>
+            <button type="button" onclick="boton6()">6</button>
+            <button type="button" onclick="resta()">-</button>
+
+            <button type="button" onclick="boton1()">1</button>
+            <button type="button" onclick="boton2()">2</button>
+            <button type="button" onclick="boton3()">3</button>
+            <button type="button" onclick="divi()" >/</button>
+
+            <button type="button" onclick="borrar()">del</button>
+            <button type="button" onclick="boton0()">0</button>
+            <button type="button" onclick="igual()">=</button>
+            <button type="button" onclick="multi()">x</button>
+        </div>
+    </div>
+
+
+
+
+<!-- parte 4 -->
+
+    <h2>parte 4: Verificador de Números Primos</h2>
+
+    <label for="numeroInput">Ingrese un número:</label>
+    <input type="number" id="numeroInput" placeholder="Ingrese el número">
+
+    <button onclick="verificarPrimo()">Verificar Primo</button>
+</center>
+    
+    <script src="script.js"></script>
+</body>
+</html>
